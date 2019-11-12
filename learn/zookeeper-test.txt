@@ -1,0 +1,10 @@
+参考设置
+https://www.cnblogs.com/ilinuxer/p/6498895.html
+
+设置pom.xml引入zookeeper套件
+设置bootstrap.properties，设置zookeeper服务IP和端口以及实例服务IP和端口。
+spring.cloud.zookeeper.connect-string=192.168.21.6:2181
+spring.cloud.zookeeper.discovery.enabled=true
+spring.cloud.zookeeper.discovery.instance-host=127.0.0.1
+#instance & port must be setup.ohterwise it will not work!!!
+spring.cloud.zookeeper.discovery.instance-port=${server.port}
